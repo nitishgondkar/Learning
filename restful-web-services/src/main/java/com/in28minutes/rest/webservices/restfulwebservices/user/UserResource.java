@@ -1,14 +1,13 @@
 package com.in28minutes.rest.webservices.restfulwebservices.user;
 
-import java.net.URI;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.validation.Valid;
+import java.net.URI;
+import java.util.List;
 
 @RestController
 public class UserResource {
@@ -32,7 +31,13 @@ public class UserResource {
 		if(user == null) {
 			throw new UserNotFoundException("id-"+ id);
 		}
-		return user;
+
+		//HATEOAS
+		//"all-users", SERVER-PATH + "/users"
+		//retrieveAllUsers
+
+
+ 		return user;
 	}
 
 	@DeleteMapping("/users/{id}")
