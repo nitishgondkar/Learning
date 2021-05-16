@@ -98,10 +98,12 @@
 		<!-- MONITORING TOOLS  -->
 
 		<!-- SPRING SECURITY : Authentication and Authorization -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+		</dependency>-->
+
+		<!--Disabling Security for JPA Learning Purpose-->
 
 	</dependencies>
 
